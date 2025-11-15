@@ -75,7 +75,24 @@ Invoke-Pester ./Tests/pstoon.tests.ps1
 - [Upstream TOON Project](https://github.com/toon-format/toon)
 - [Benchmarks & Examples](https://github.com/toon-format/toon#benchmarks)
 
-## License
+## How This Module Was Built (Maximum Transparency)
+
+Total human-written lines of code: **< 15**  
+Total time from “hey, TOON looks useful” to fully working module with tests: **under 1 hour**
+
+Process:
+1. Opened the [TOON spec](https://github.com/toon-format/spec/blob/main/SPEC.md) in VS Code  
+2. Told GitHub Copilot + Claude 3.5 Sonnet: “Write a complete, idiomatic PowerShell module that round-trips TOON ↔ PS objects. Include Pester tests. Go.”  
+3. Ran the tests, found a few edge-case bugs, threw the errors back at the model → instant fixes  
+4. One final manual tweak for style, commit, push  
+
+~99 % AI-generated, 100 % tested and shipped by a human who mostly just typed prompts and drank coffee.
+
+This is now my default module-creation speedrun. Expect many more to drop exactly like this.
+
+Curious about the prompts or want to see the full Copilot/Claude chat? DM me @dfinke – happy to open-source the workflow too.
+
+#AIAssisted #OneHourModule #PowerShell
 
 ## License
 
